@@ -46,7 +46,7 @@ img {
 
 .btn {
   color: #4cffda;
-  padding: 0.8rem;
+  padding: 13px;
   font-size: 16px;
   text-transform: uppercase;
   border-radius: 4px;
@@ -66,26 +66,14 @@ img {
   padding: 0;
 }
 
-.cards_item {
+.cards-item {
   display: flex;
-  padding: 1rem;
-}
-
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 33.3333%;
-  }
+  padding: 16px;
 }
 
 .card {
   background-color: #000;
-  border-radius: 0.25rem;
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -97,23 +85,37 @@ img {
   opacity: 1;
 }
 
-.card_content {
-  padding: 1rem;
+.card-content {
+  padding: 16px;
 }
 
-.card_title {
-  color: #ffffff;
-  font-size: 1.1rem;
+.card-title {
+  color: #fff;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: capitalize;
   margin: 0px;
 }
 
-.card_text {
-  color: #ffffff;
-  font-size: 0.875rem;
+.card-text {
+  color: #fff;
+  font-size: 14x;
   line-height: 1.5;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
   font-weight: 400;
 }
+
+@media screen and (min-width: 640px) {
+  .cards-item {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 896px) {
+  .cards-item {
+    width: 33.3333%;
+  }
+}
+
+
